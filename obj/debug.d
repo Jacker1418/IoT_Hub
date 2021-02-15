@@ -1,4 +1,4 @@
-obj/main.o: src/main.c /usr/include/stdc-predef.h src/main.h \
+obj/debug.o: src/debug.c /usr/include/stdc-predef.h src/debug.h \
  /usr/include/stdio.h \
  /usr/include/arm-linux-gnueabihf/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/arm-linux-gnueabihf/sys/cdefs.h \
@@ -18,51 +18,10 @@ obj/main.o: src/main.c /usr/include/stdc-predef.h src/main.h \
  /usr/include/arm-linux-gnueabihf/bits/types/struct_FILE.h \
  /usr/include/arm-linux-gnueabihf/bits/stdio_lim.h \
  /usr/include/arm-linux-gnueabihf/bits/sys_errlist.h \
- /usr/include/stdlib.h /usr/include/arm-linux-gnueabihf/bits/waitflags.h \
- /usr/include/arm-linux-gnueabihf/bits/waitstatus.h \
- /usr/include/arm-linux-gnueabihf/bits/floatn.h \
- /usr/include/arm-linux-gnueabihf/bits/floatn-common.h \
- /usr/include/arm-linux-gnueabihf/sys/types.h \
- /usr/include/arm-linux-gnueabihf/bits/types/clock_t.h \
- /usr/include/arm-linux-gnueabihf/bits/types/clockid_t.h \
- /usr/include/arm-linux-gnueabihf/bits/types/time_t.h \
- /usr/include/arm-linux-gnueabihf/bits/types/timer_t.h \
- /usr/include/arm-linux-gnueabihf/bits/stdint-intn.h \
- /usr/include/endian.h /usr/include/arm-linux-gnueabihf/bits/endian.h \
- /usr/include/arm-linux-gnueabihf/bits/byteswap.h \
- /usr/include/arm-linux-gnueabihf/bits/uintn-identity.h \
- /usr/include/arm-linux-gnueabihf/sys/select.h \
- /usr/include/arm-linux-gnueabihf/bits/select.h \
- /usr/include/arm-linux-gnueabihf/bits/types/sigset_t.h \
- /usr/include/arm-linux-gnueabihf/bits/types/__sigset_t.h \
- /usr/include/arm-linux-gnueabihf/bits/types/struct_timeval.h \
- /usr/include/arm-linux-gnueabihf/bits/types/struct_timespec.h \
- /usr/include/arm-linux-gnueabihf/bits/pthreadtypes.h \
- /usr/include/arm-linux-gnueabihf/bits/thread-shared-types.h \
- /usr/include/arm-linux-gnueabihf/bits/pthreadtypes-arch.h \
- /usr/include/alloca.h \
- /usr/include/arm-linux-gnueabihf/bits/stdlib-float.h \
  /usr/include/string.h \
  /usr/include/arm-linux-gnueabihf/bits/types/locale_t.h \
  /usr/include/arm-linux-gnueabihf/bits/types/__locale_t.h \
- /usr/include/strings.h src/gdbus.h /usr/include/dbus-1.0/dbus/dbus.h \
- /usr/lib/arm-linux-gnueabihf/dbus-1.0/include/dbus/dbus-arch-deps.h \
- /usr/include/dbus-1.0/dbus/dbus-macros.h \
- /usr/include/dbus-1.0/dbus/dbus-address.h \
- /usr/include/dbus-1.0/dbus/dbus-types.h \
- /usr/include/dbus-1.0/dbus/dbus-errors.h \
- /usr/include/dbus-1.0/dbus/dbus-protocol.h \
- /usr/include/dbus-1.0/dbus/dbus-bus.h \
- /usr/include/dbus-1.0/dbus/dbus-connection.h \
- /usr/include/dbus-1.0/dbus/dbus-memory.h \
- /usr/include/dbus-1.0/dbus/dbus-message.h \
- /usr/include/dbus-1.0/dbus/dbus-shared.h \
- /usr/include/dbus-1.0/dbus/dbus-misc.h \
- /usr/include/dbus-1.0/dbus/dbus-pending-call.h \
- /usr/include/dbus-1.0/dbus/dbus-server.h \
- /usr/include/dbus-1.0/dbus/dbus-signature.h \
- /usr/include/dbus-1.0/dbus/dbus-syntax.h \
- /usr/include/dbus-1.0/dbus/dbus-threads.h /usr/include/glib-2.0/glib.h \
+ /usr/include/strings.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/arm-linux-gnueabihf/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
@@ -75,13 +34,37 @@ obj/main.o: src/main.c /usr/include/stdc-predef.h src/main.h \
  /usr/lib/gcc/arm-linux-gnueabihf/8/include/float.h \
  /usr/include/glib-2.0/glib/gversionmacros.h /usr/include/time.h \
  /usr/include/arm-linux-gnueabihf/bits/time.h \
+ /usr/include/arm-linux-gnueabihf/bits/types/clock_t.h \
+ /usr/include/arm-linux-gnueabihf/bits/types/time_t.h \
  /usr/include/arm-linux-gnueabihf/bits/types/struct_tm.h \
+ /usr/include/arm-linux-gnueabihf/bits/types/struct_timespec.h \
+ /usr/include/arm-linux-gnueabihf/bits/types/clockid_t.h \
+ /usr/include/arm-linux-gnueabihf/bits/types/timer_t.h \
  /usr/include/arm-linux-gnueabihf/bits/types/struct_itimerspec.h \
  /usr/include/glib-2.0/glib/garray.h \
  /usr/include/glib-2.0/glib/gasyncqueue.h \
  /usr/include/glib-2.0/glib/gthread.h \
  /usr/include/glib-2.0/glib/gatomic.h /usr/include/glib-2.0/glib/gerror.h \
  /usr/include/glib-2.0/glib/gquark.h /usr/include/glib-2.0/glib/gutils.h \
+ /usr/include/stdlib.h /usr/include/arm-linux-gnueabihf/bits/waitflags.h \
+ /usr/include/arm-linux-gnueabihf/bits/waitstatus.h \
+ /usr/include/arm-linux-gnueabihf/bits/floatn.h \
+ /usr/include/arm-linux-gnueabihf/bits/floatn-common.h \
+ /usr/include/arm-linux-gnueabihf/sys/types.h \
+ /usr/include/arm-linux-gnueabihf/bits/stdint-intn.h \
+ /usr/include/endian.h /usr/include/arm-linux-gnueabihf/bits/endian.h \
+ /usr/include/arm-linux-gnueabihf/bits/byteswap.h \
+ /usr/include/arm-linux-gnueabihf/bits/uintn-identity.h \
+ /usr/include/arm-linux-gnueabihf/sys/select.h \
+ /usr/include/arm-linux-gnueabihf/bits/select.h \
+ /usr/include/arm-linux-gnueabihf/bits/types/sigset_t.h \
+ /usr/include/arm-linux-gnueabihf/bits/types/__sigset_t.h \
+ /usr/include/arm-linux-gnueabihf/bits/types/struct_timeval.h \
+ /usr/include/arm-linux-gnueabihf/bits/pthreadtypes.h \
+ /usr/include/arm-linux-gnueabihf/bits/thread-shared-types.h \
+ /usr/include/arm-linux-gnueabihf/bits/pthreadtypes-arch.h \
+ /usr/include/alloca.h \
+ /usr/include/arm-linux-gnueabihf/bits/stdlib-float.h \
  /usr/include/glib-2.0/glib/gbacktrace.h /usr/include/signal.h \
  /usr/include/arm-linux-gnueabihf/bits/signum.h \
  /usr/include/arm-linux-gnueabihf/bits/signum-generic.h \
@@ -163,5 +146,23 @@ obj/main.o: src/main.c /usr/include/stdc-predef.h src/main.h \
  /usr/include/arm-linux-gnueabihf/bits/types/struct_sched_param.h \
  /usr/include/arm-linux-gnueabihf/bits/cpu-set.h \
  /usr/include/arm-linux-gnueabihf/bits/setjmp.h \
- /usr/include/glib-2.0/glib/glib-autocleanups.h src/dbus_init.h \
+ /usr/include/glib-2.0/glib/glib-autocleanups.h \
+ /usr/include/dbus-1.0/dbus/dbus.h \
+ /usr/lib/arm-linux-gnueabihf/dbus-1.0/include/dbus/dbus-arch-deps.h \
+ /usr/include/dbus-1.0/dbus/dbus-macros.h \
+ /usr/include/dbus-1.0/dbus/dbus-address.h \
+ /usr/include/dbus-1.0/dbus/dbus-types.h \
+ /usr/include/dbus-1.0/dbus/dbus-errors.h \
+ /usr/include/dbus-1.0/dbus/dbus-protocol.h \
+ /usr/include/dbus-1.0/dbus/dbus-bus.h \
+ /usr/include/dbus-1.0/dbus/dbus-connection.h \
+ /usr/include/dbus-1.0/dbus/dbus-memory.h \
+ /usr/include/dbus-1.0/dbus/dbus-message.h \
+ /usr/include/dbus-1.0/dbus/dbus-shared.h \
+ /usr/include/dbus-1.0/dbus/dbus-misc.h \
+ /usr/include/dbus-1.0/dbus/dbus-pending-call.h \
+ /usr/include/dbus-1.0/dbus/dbus-server.h \
+ /usr/include/dbus-1.0/dbus/dbus-signature.h \
+ /usr/include/dbus-1.0/dbus/dbus-syntax.h \
+ /usr/include/dbus-1.0/dbus/dbus-threads.h src/gdbus.h \
  src/dbus_attach_object.h

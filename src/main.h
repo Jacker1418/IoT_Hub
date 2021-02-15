@@ -7,5 +7,6 @@
 
 #include "gdbus.h"
 #include "dbus_init.h"
+#include "dbus_attach_object.h"
 
 #endif
